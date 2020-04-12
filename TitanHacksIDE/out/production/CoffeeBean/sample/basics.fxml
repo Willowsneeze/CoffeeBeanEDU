@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="75.0" layoutX="-83.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="693.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.01904761904761905" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop color="#747575" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <TextArea fx:id="concepts" editable="false" layoutX="20.0" layoutY="149.0" prefHeight="174.0" prefWidth="560.0" text="Congradulations on beginning on the path to learning Java! Java is a programming language that has been fundemental in the field of computer science for many years. In fact, it is used on billions of machines worldwide!" wrapText="true">
+         <font>
+            <Font name="Quicksand-Regular" size="18.0" />
+         </font>
+      </TextArea>
+      <Separator layoutX="25.0" layoutY="329.0" prefHeight="0.0" prefWidth="550.0" />
+      <TextArea fx:id="examples" layoutX="20.0" layoutY="366.0" prefHeight="220.0" prefWidth="560.0" text="Computers and phones run on Java. &#10;So do many games and programs.&#10;" wrapText="true">
+         <font>
+            <Font name="Consolas" size="18.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="20.0" layoutY="330.0" prefHeight="30.0" prefWidth="150.0" text="Examples:">
+         <font>
+            <Font name="Consolas Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="112.0" prefHeight="30.0" prefWidth="150.0" text="Concepts:">
+         <font>
+            <Font name="Consolas Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="backbtn" layoutX="522.0" layoutY="8.0" mnemonicParsing="false" text="&lt;" />
+      <Label layoutX="152.0" layoutY="81.0" prefHeight="37.0" prefWidth="282.0" text="JAVA FUNDEMENTALS">
+         <font>
+            <Font name="Consolas Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="frwdbtn" layoutX="549.0" layoutY="8.0" mnemonicParsing="false" text="&gt;" />
+      <ProgressBar layoutX="274.0" layoutY="42.0" prefHeight="20.0" prefWidth="300.0" progress="0.0" />
+      <Circle layoutX="38.0" layoutY="38.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+      <ImageView fitHeight="56.0" fitWidth="56.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/img1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="79.0" layoutY="13.0" text="Programmer">
+         <font>
+            <Font name="Consolas Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="41.0" prefHeight="22.0" prefWidth="132.0" text="x Pts.">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
